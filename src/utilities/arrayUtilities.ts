@@ -1,21 +1,15 @@
 import { generarEnteroAleatorio } from "./randomUtilities";
 
-export const generarArrayAleatorio = (length, min, max) => {
-  const array = [];
+export const generarArrayAleatorio = (length: number, min: number, max: number): number[] => {
+  const array: number[] = [];
   for (let i = 0; i < length; i++) {
     array.push(generarEnteroAleatorio(min, max));
   }
   return array;
 };
 
-/**
- *
- * @param {*} array1
- * @param {*} array2
- * @returns
- */
-export const sumaArray = (array1, array2) => {
-  const arraySuma = [];
+export const sumaArray = (array1: number[], array2: number[]): number[] => {
+  const arraySuma: number[] = [];
   const arraysLength = array1.length;
   for (let i = 0; i < arraysLength; i++) {
     arraySuma.push(array1[i] + array2[i]);
@@ -23,14 +17,8 @@ export const sumaArray = (array1, array2) => {
   return arraySuma;
 };
 
-/**
- *
- * @param {*} array1
- * @param {*} array2
- * @returns
- */
-export const restaArrays = (array1, array2) => {
-  const arraySuma = [];
+export const restaArrays = (array1: number[], array2: number[]): number[] => {
+  const arraySuma: number[] = [];
   const arraysLength = array1.length;
   for (let i = 0; i < arraysLength; i++) {
     arraySuma.push(array1[i] - array2[i]);
@@ -38,14 +26,8 @@ export const restaArrays = (array1, array2) => {
   return arraySuma;
 };
 
-/**
- *
- * @param {*} array1
- * @param {*} array2
- * @returns
- */
-export const multiplicacionArrays = (array1, array2) => {
-  const arraySuma = [];
+export const multiplicacionArrays = (array1: number[], array2: number[]): number[] => {
+  const arraySuma: number[] = [];
   const arraysLength = array1.length;
   for (let i = 0; i < arraysLength; i++) {
     arraySuma.push(array1[i] * array2[i]);
@@ -53,12 +35,7 @@ export const multiplicacionArrays = (array1, array2) => {
   return arraySuma;
 };
 
-/**
- *
- * @param {*} arr
- * @returns
- */
-export const bblSort = (arr) => {
+export const bblSort = (arr: number[]): number[] => {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length - i - 1; j++) {
       if (arr[j] > arr[j + 1]) {
