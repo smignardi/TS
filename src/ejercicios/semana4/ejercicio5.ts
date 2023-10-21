@@ -3,7 +3,7 @@ import culpables from "../../files/culpables.json";
 const arrayInocentes = [];
 const arrayCulpables = [];
 
-const rellenarListas = (arr: any[], arr1: any[], arr2: any[]) => {
+const rellenarListas = (arr: any[], arr1: String[], arr2: String[]):void => {
   for (let i = 0; i < arr.length; i++) {
     if (
       verificarCondiciones(arr[i].nombre, arr[i].apellido1, arr[i].apellido2)

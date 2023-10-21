@@ -1,7 +1,7 @@
 import { bblSort } from "../../utilities/arrayUtilities";
 import listaVideojuegos from "../../files/videojuegos.json";
 
-const ordenarArray = (arr): any[] => {
+const ordenarArray = (arr:any): any[] => {
   return listaVideojuegos.juegos.sort((a, b) => a.precio - b.precio);
 };
 
